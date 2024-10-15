@@ -3,7 +3,7 @@ from openai import OpenAI
 import os
 
 ### Load your API Key
-my_secret_key = userdata.get['MyOpenAIKey']
+my_secret_key = st.secret.get['MyOpenAIKey']
 os.environ["OPENAI_API_KEY"] = my_secret_key
 
 ### Request the answer to the question "Damascus is a"
